@@ -1,0 +1,4 @@
+# 一行一プロキシ — ip:port or user:pass@ip:port
+# 例:
+# 123.45.67.89:8080
+# myuser:mypass@98.76.54.32:3128

@@ -1,0 +1,53 @@
+{
+  "target_platform": "instagram",
+  "target_username": "TARGET_USERNAME_HERE",
+  "accounts_to_create": 50,
+  "headless": true,
+  "proxy_list_file": "data/proxies.txt",
+  "email_domain": "guerrillamail.com",
+  "delay_between_actions": [
+    2,
+    6
+  ],
+  "recaptcha": {
+    "service": "2captcha_free",
+    "api_key": "FREE_KEY_OR_LEAVE_BLANK_FOR_AUDIO_BYPASS"
+  },
+  "platforms": {
+    "instagram": {
+      "register_url": "https://www.instagram.com/accounts/emailsignup/",
+      "follow_url": "https://www.instagram.com/{username}/",
+      "selectors": {
+        "email_field": "input[name='emailOrPhone']",
+        "fullname_field": "input[name='fullName']",
+        "username_field": "input[name='username']",
+        "password_field": "input[name='password']",
+        "submit_btn": "button[type='submit']",
+        "follow_btn": "button:contains('Follow')"
+      }
+    },
+    "twitter": {
+      "register_url": "https://x.com/i/flow/signup",
+      "follow_url": "https://x.com/{username}",
+      "selectors": {
+        "name_field": "input[name='name']",
+        "email_field": "input[name='email']",
+        "follow_btn": "[data-testid='followButton']"
+      }
+    },
+    "tiktok": {
+      "register_url": "https://www.tiktok.com/signup",
+      "follow_url": "https://www.tiktok.com/@{username}",
+      "selectors": {
+        "email_field": "input[name='email']",
+        "follow_btn": "[data-e2e='follow-button']"
+      }
+    },
+    "discord": {
+      "invite_url": "https://discord.gg/YOUR_INVITE_CODE_HERE"
+    }
+  },
+  "anthropic_api_key": "sk-ant-YOUR_KEY_HERE",
+  "captcha_service": "2captcha",
+  "captcha_key": ""
+}
